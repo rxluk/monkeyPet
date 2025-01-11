@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const monkeyElement = document.getElementById('monkey');
+    const hatElement = document.getElementById('chapeu');
     const feedButton = document.getElementById('feed');
     const playButton = document.getElementById('play');
     const bathButton = document.getElementById('bath');
     const sleepButton = document.getElementById('sleep');
+    const toggleHatButton = document.getElementById('toggle-hat');
     const messageElement = document.getElementById('message');
 
     const healthBar = document.getElementById('health');
@@ -56,6 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
             messageElement.innerText = '';
         }, 2000);
     }
+
+    toggleHatButton.addEventListener('click', function() {
+        hatElement.classList.toggle('hidden');
+    });
 
     feedButton.addEventListener('click', () => updateBars('feed'));
     playButton.addEventListener('click', () => updateBars('play'));
