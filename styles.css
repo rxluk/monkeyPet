@@ -16,6 +16,7 @@ body {
 }
 
 #container {
+    position: relative; /* Para posicionar acessórios sobre o macaquinho */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,18 @@ body {
     max-width: 100%;
     max-height: 100%;
     border-radius: 5px;
+}
+
+.accessory {
+    position: absolute;
+    top: 0; /* Ajuste conforme necessário para alinhar o chapéu */
+    left: 0; /* Ajuste conforme necessário para alinhar o chapéu */
+    width: 100%; /* Ajuste conforme necessário para o tamanho correto do chapéu */
+    height: auto;
+}
+
+.hidden {
+    display: none;
 }
 
 #actions {
