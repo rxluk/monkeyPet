@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macaquinho Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Macaquinho Virtual</h1>
+    <div id="content">
+        <div id="container">
+            <img src="monkey.jpg" alt="Macaquinho" id="monkey">
+        </div>
+        <div id="actions">
+            <button id="feed">Alimentar</button>
+            <button id="play">Brincar</button>
+            <button id="bath">Dar Banho</button>
+            <button id="sleep">Colocar para Dormir</button>
+        </div>
+    </div>
+    <div id="status">
+        <div class="status-bar">
+            <label for="health">Vida:</label>
+            <progress id="health" value="100" max="100"></progress>
+        </div>
+        <div class="status-bar">
+            <label for="energy">Energia:</label>
+            <progress id="energy" value="100" max="100"></progress>
+        </div>
+        <div class="status-bar">
+            <label for="stress">Estresse:</label>
+            <progress id="stress" value="0" max="100"></progress>
+        </div>
+        <div class="status-bar">
+            <label for="hunger">Fome:</label>
+            <progress id="hunger" value="0" max="100"></progress>
+        </div>
+    </div>
+    <p id="message"></p>
+    <script src="script.js"></script>
+</body>
+</html>
